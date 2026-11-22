@@ -3,11 +3,11 @@ var bally = 300;
 var ballSize = 40;
 var score =0;
 var gameState= "L1";
-var img1;
+//var img1;
 
 function preload() {
 
-  img1 = loadImage('https://hallowsoull.github.io/fly_minigame/table.png');
+  //img1 = loadImage('https://hallowsoull.github.io/fly_minigame/table.png');
     //img2 = loadImage('https://hallowsoull.github.io/images/space.png');
 }
 
@@ -19,8 +19,8 @@ function setup() {
 
 
 function draw() {
-  // background(220);
-  background(img1);
+  background(220);
+  //background(img1);
   if (gameState=="L1"){
   levelOne();
   } 
@@ -61,7 +61,8 @@ function levelOne(){
 } // end level one
 
 function levelTwo(){
-  background(img1);
+  background(220);
+  // background(img1);
   cursor('fly.png')
   text("Level 2", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
@@ -81,7 +82,8 @@ function levelTwo(){
 } // end level two
 
 function levelThree(){
-    background(img1);
+  background(220);
+  //  background(img1);
   text("Level 3", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/2){
