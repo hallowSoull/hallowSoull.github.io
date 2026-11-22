@@ -3,9 +3,13 @@ var bally = 300;
 var ballSize = 40;
 var score =0;
 var gameState= "L1";
+var img1;
 
+function preload() {
 
-
+  img1 = loadImage('https://hallowsoull.github.io/images/table.png');
+    //img2 = loadImage('https://hallowsoull.github.io/images/space.png');
+}
 function setup() {
   createCanvas(600, 600);
   textAlign(CENTER);
@@ -14,7 +18,7 @@ function setup() {
 
 
 function draw() {
-  background(220);
+  background(img1);
   if (gameState=="L1"){
   levelOne();
   } 
@@ -53,7 +57,7 @@ function levelOne(){
 } // end level one
 
 function levelTwo(){
-  background(200, 100, 0);
+  background(img1);
   text("Level 2", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/2){
@@ -72,7 +76,7 @@ function levelTwo(){
 } // end level two
 
 function levelThree(){
-    background(200, 100, 2000);
+    background(img1);
   text("Level 3", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
   if (distToBall <ballSize/2){
