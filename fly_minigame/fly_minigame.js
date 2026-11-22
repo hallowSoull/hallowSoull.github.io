@@ -7,7 +7,7 @@ var img1;
 
 function preload() {
 
-  img1 = loadImage('https://hallowsoull.github.io/images/table.png');
+  img1 = loadImage('https://hallowsoull.github.io/fly_minigame/table.png');
     //img2 = loadImage('https://hallowsoull.github.io/images/space.png');
 }
 
